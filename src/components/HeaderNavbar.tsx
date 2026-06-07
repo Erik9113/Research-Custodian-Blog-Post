@@ -78,7 +78,7 @@ export default function HeaderNavbar({ onScrollToSection, onOpenVideoModal }: He
             title="Research Custodian Nav Logo"
           >
             <img 
-              src="/HeaderNavLogo.webp" 
+              src="/HeaderNavLogo.png" 
               alt="Research Custodian Badge" 
               className="max-h-9 max-w-[90%] object-contain px-0.5"
               referrerPolicy="no-referrer"

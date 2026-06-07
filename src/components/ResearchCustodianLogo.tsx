@@ -30,7 +30,7 @@ export default function ResearchCustodianLogo({ className = '', size = 'md' }: L
         {/* Main Logo Image details */}
         <div className="relative z-10 flex flex-col items-center justify-center w-full p-1">
           <img 
-            src="/Dark Logo.webp" 
+            src="/Dark Logo.png" 
             alt="Research Custodian Logo" 
             className="max-h-[235px] sm:max-h-[240px] md:max-h-[245px] w-auto max-w-[98%] object-contain transition-transform duration-300 group-hover:scale-[1.03]"
             referrerPolicy="no-referrer"
