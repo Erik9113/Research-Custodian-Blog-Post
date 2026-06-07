@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Research Custodian Showcase",
+  "description": "An interactive, dynamic scroll-animated blog post and design showcase for Research Custodian, modeled after the Notchflow aesthetic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

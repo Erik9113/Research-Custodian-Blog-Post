@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-brand-neon-cyan: #B45309; /* Warm Amber */
+  --color-brand-neon-green: #15803D; /* Forest Green */
+  --color-brand-neon-blue: #1D4ED8; /* Deep Blue */
+  --color-bg-dark: #FCFBF9; /* Warm Neutral Off-white */
+  --color-card-dark: #FFFFFF; /* Bright White Card */
+  --color-card-dark-hover: #FFFDF4; /* Gentle Corn Silk glow on hover */
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg-dark);
+    color: #374151; /* Dark Charcoal Slate for super high readability */
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Custom styles for high-fidelity interactive elements */
+.glowing-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(139, 92, 26, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(139, 92, 26, 0.03) 1px, transparent 1px);
+}
+
+.glowing-glass {
+  background: rgba(255, 253, 248, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(139, 92, 26, 0.08);
+}
+
+.glow-cyan {
+  box-shadow: 0 10px 30px rgba(180, 83, 9, 0.05);
+}
+
+.glow-emerald {
+  box-shadow: 0 10px 30px rgba(21, 128, 61, 0.05);
+}
+
+/* Smooth custom scrollbars for light mode */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FCFBF9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E5E7EB;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D1D5DB;
+}
